@@ -5,7 +5,7 @@ terraform {
 }
 
 variable "name" {
-  default = "roger"
+  default = "Carol"
 }
 
 resource "random_id" "random" {

@@ -5,7 +5,11 @@ terraform {
 }
 
 variable "name" {
+<<<<<<< HEAD
   default = "Walter"
+=======
+  default = "Peter"
+>>>>>>> 30eddfae5d55a2e317a51ce8e8dbb5fffe402f38
 }
 
 resource "random_id" "random" {

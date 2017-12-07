@@ -12,7 +12,7 @@ resource "random_id" "random" {
   keepers {
     uuid = "${uuid()}"
   }
-  byte_length = 24
+  byte_length = 32
 }
 
 output "random" {

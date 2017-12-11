@@ -1,11 +1,17 @@
 terraform {
-  backend "atlas" {
+  /*backend "atlas" {
     name = "RogerBerlind/basic-enterprise-backend"
-  }
+  }*/
 }
 
 variable "name" {
   default = "Walter"
+}
+
+null_resource "test_az" {
+  provisioner "local-exec" {
+    command = "az"
+  }
 }
 
 resource "random_id" "random" {
@@ -13,6 +19,7 @@ resource "random_id" "random" {
     uuid = "${uuid()}"
   }
   byte_length = 32
+  depends_on = ["null_resource.test_az"]
 }
 
 output "random" {

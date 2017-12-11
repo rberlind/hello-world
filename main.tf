@@ -8,7 +8,7 @@ variable "name" {
   default = "Walter"
 }
 
-null_resource "test_az" {
+resource "null_resource" "test_az" {
   provisioner "local-exec" {
     command = "az"
   }

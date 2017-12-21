@@ -2,6 +2,12 @@ variable "name" {
   default = "Walter"
 }
 
+resource "null_resource" "test_az" {		
+   provisioner "local-exec" {		
+     command = "echo 'az'"		
+   }		
+ }		
+ 
 resource "random_id" "random" {
   keepers {
     uuid = "${uuid()}"

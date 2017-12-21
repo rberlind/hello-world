@@ -1,9 +1,3 @@
-terraform {
-  /*backend "atlas" {
-    name = "RogerBerlind/basic-enterprise-backend"
-  }*/
-}
-
 variable "name" {
   default = "Walter"
 }

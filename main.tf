@@ -13,7 +13,6 @@ resource "random_id" "random" {
     uuid = "${uuid()}"
   }
   byte_length = 32
-  depends_on = ["null_resource.test_az"]
 }
 
 output "random" {

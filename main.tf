@@ -14,5 +14,5 @@ output "random" {
 }
 
 output "hello_world" {
-  value = "Hello, ${var.name}! ${random_id.random.hex}"
+  value = "Hello, ${var.name}!"
 }

@@ -11,10 +11,10 @@ resource "random_id" "random" {
 
 output "random" {
   value = "${random_id.random.hex}"
-  sensitive = true
+  #sensitive = true
 }
 
 output "hello_world" {
   value = "Hello, ${var.name}!"
-  sensitive = true
+  #sensitive = true
 }

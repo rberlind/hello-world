@@ -1,7 +1,7 @@
 terraform {
   backend "remote" {
-    hostname = "roger-ptfe.hashidemos.io"
-    organization = "RogerBerlind"
+    hostname = "app.terraform.io"
+    organization = "Cloud-Operations"
     workspaces {
       name = "test-cli"
     }
